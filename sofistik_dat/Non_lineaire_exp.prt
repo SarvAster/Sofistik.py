@@ -1,0 +1,352 @@
+   *** Début: Programme Calculation - Version 2024-6.0.905
+   *** Début: Programme aqua
+   
+   SOFiSTiK 2024-6.0.905    AQUA   - GENERAL SECTIONS
+   Sortie sur fichier Non_lineaire_exp.plb
+   Base de données du projet Non_lineaire_exp.cdb -    53. accès
+   +++++ avertissement no.    38 dans programme AQU_SVAL
+   La section  1, étape de construction  0 contient plus de8.0 % (100.0 %) d'armature.
+   +++++ avertissement no.    38 dans programme AQU_SVAL
+   La section  2, étape de construction  0 contient plus de8.0 % (100.0 %) d'armature.
+   DURÉE DE CALCUL         1, TOTAL         1
+   DATE       2024-09-23, 15:00:13
+   
+   
+   
+    +++++    0 erreurs et    2 avertissements +++++
+   *** Arrêt: Programme aqua
+   *** Début: Programme sofimshc
+   
+   SOFiSTiK 2024-6.0.905    SOFIMSHC - GEOMETRY + STRUCT
+   Sortie sur fichier Non_lineaire_exp.plb
+   Base de données du projet Non_lineaire_exp.cdb -    54. accès
+   +++++ avertissement no.   313 dans programme STREAM_GET_LINE
+   La ligne structurelle (SLN) 3 n'a pas de début / de fin
+   +++++ avertissement no.   313 dans programme STREAM_GET_LINE
+   La ligne structurelle (SLN) 10 n'a pas de début / de fin
+   +++++ avertissement no.   313 dans programme STREAM_GET_LINE
+   La ligne structurelle (SLN) 17 n'a pas de début / de fin
+   +++++ avertissement no.   381 dans programme intersectEdges
+   Les deux lignes structurelles se chevauchant 4 et  11 ont toutes les deux une section affectée.
+   Seule la première ligne sera prise en compte. Afin de supprimer ce mécanisme, désactivez
+   l'intersection des lignes structurelles (SLN XFLG L).
+   +++++ avertissement no.   381 dans programme intersectEdges
+   Les deux lignes structurelles se chevauchant 4 et  18 ont toutes les deux une section affectée.
+   Seule la première ligne sera prise en compte. Afin de supprimer ce mécanisme, désactivez
+   l'intersection des lignes structurelles (SLN XFLG L).
+   +++++ avertissement no.   381 dans programme intersectEdges
+   Les deux lignes structurelles se chevauchant 5 et  12 ont toutes les deux une section affectée.
+   Seule la première ligne sera prise en compte. Afin de supprimer ce mécanisme, désactivez
+   l'intersection des lignes structurelles (SLN XFLG L).
+   +++++ avertissement no.   381 dans programme intersectEdges
+   Les deux lignes structurelles se chevauchant 5 et  19 ont toutes les deux une section affectée.
+   Seule la première ligne sera prise en compte. Afin de supprimer ce mécanisme, désactivez
+   l'intersection des lignes structurelles (SLN XFLG L).
+   +++++ avertissement no.   381 dans programme intersectEdges
+   Les deux lignes structurelles se chevauchant 6 et  13 ont toutes les deux une section affectée.
+   Seule la première ligne sera prise en compte. Afin de supprimer ce mécanisme, désactivez
+   l'intersection des lignes structurelles (SLN XFLG L).
+   +++++ avertissement no.   381 dans programme intersectEdges
+   Les deux lignes structurelles se chevauchant 6 et  20 ont toutes les deux une section affectée.
+   Seule la première ligne sera prise en compte. Afin de supprimer ce mécanisme, désactivez
+   l'intersection des lignes structurelles (SLN XFLG L).
+   +++++ avertissement no.   381 dans programme intersectEdges
+   Les deux lignes structurelles se chevauchant 7 et  14 ont toutes les deux une section affectée.
+   Seule la première ligne sera prise en compte. Afin de supprimer ce mécanisme, désactivez
+   l'intersection des lignes structurelles (SLN XFLG L).
+   +++++ avertissement no.   381 dans programme intersectEdges
+   Les deux lignes structurelles se chevauchant 7 et  21 ont toutes les deux une section affectée.
+   Seule la première ligne sera prise en compte. Afin de supprimer ce mécanisme, désactivez
+   l'intersection des lignes structurelles (SLN XFLG L).
+   +++++ avertissement no.   381 dans programme intersectEdges
+   Les deux lignes structurelles se chevauchant 8 et  15 ont toutes les deux une section affectée.
+   Seule la première ligne sera prise en compte. Afin de supprimer ce mécanisme, désactivez
+   l'intersection des lignes structurelles (SLN XFLG L).
+   +++++ avertissement no.   381 dans programme intersectEdges
+   Les deux lignes structurelles se chevauchant 8 et  22 ont toutes les deux une section affectée.
+   Seule la première ligne sera prise en compte. Afin de supprimer ce mécanisme, désactivez
+   l'intersection des lignes structurelles (SLN XFLG L).
+   +++++ avertissement no.   381 dans programme intersectEdges
+   Les deux lignes structurelles se chevauchant 9 et  16 ont toutes les deux une section affectée.
+   Seule la première ligne sera prise en compte. Afin de supprimer ce mécanisme, désactivez
+   l'intersection des lignes structurelles (SLN XFLG L).
+   +++++ avertissement no.   381 dans programme intersectEdges
+   Les deux lignes structurelles se chevauchant 9 et  23 ont toutes les deux une section affectée.
+   Seule la première ligne sera prise en compte. Afin de supprimer ce mécanisme, désactivez
+   l'intersection des lignes structurelles (SLN XFLG L).
+   Analyse et décomposition du modèle structurel
+   CPU-time [s]:    0.00,   geom. tolerance [m]:   0.010
+   DURÉE DE CALCUL         1, TOTAL         1
+   DATE       2024-09-23, 15:00:14
+   
+   
+   
+    +++++    0 erreurs et   15 avertissements +++++
+   *** Arrêt: Programme sofimshc
+   *** Début: Programme sofiload
+   
+   SOFiSTiK 2024-6.0.905    SOFILOAD - LOAD GENERATOR
+   Sortie sur fichier Non_lineaire_exp.plb
+   Base de données du projet Non_lineaire_exp.cdb -    55. accès
+   DURÉE DE CALCUL         1, TOTAL         1
+   DURÉE DE CALCUL         0, TOTAL         1
+   DATE       2024-09-23, 15:00:15
+   *** Arrêt: Programme sofiload
+   *** Début: Programme sofiload
+   
+   SOFiSTiK 2024-6.0.905    SOFILOAD - LOAD GENERATOR
+   Sortie sur fichier Non_lineaire_exp.plb
+   Base de données du projet Non_lineaire_exp.cdb -    56. accès
+   DURÉE DE CALCUL         0, TOTAL         0
+   DURÉE DE CALCUL         0, TOTAL         0
+   DATE       2024-09-23, 15:00:15
+   *** Arrêt: Programme sofiload
+   *** Début: Programme ase
+   
+   SOFiSTiK 2024-6.0.905    ASE   - ADVANCED SOLUTION ENGINE
+   Sortie sur fichier Non_lineaire_exp.plb
+   Base de données du projet Non_lineaire_exp.cdb -    57. accès
+   Cas de charge    10
+   
+   Paramètres du système d'équatio   3
+   (Sparse Direct Solver)
+   Nbre d'inconnues              27269
+   Entrées totales              319071
+   Nb d'entrées après complé   1845817
+   DURÉE DE CALCUL         2, TOTAL         2
+   DURÉE DE CALCUL         0, TOTAL         2
+   DATE       2024-09-23, 15:00:17
+   *** Arrêt: Programme ase
+   *** Début: Programme ase
+   
+   SOFiSTiK 2024-6.0.905    ASE   - ADVANCED SOLUTION ENGINE
+   Sortie sur fichier Non_lineaire_exp.plb
+   Base de données du projet Non_lineaire_exp.cdb -    58. accès
+   Cas de charge     1
+   
+   Paramètres du système d'équatio   3
+   (Sparse Direct Solver)
+   Nbre d'inconnues              27269
+   Entrées totales              319071
+   Nb d'entrées après complé   1845817
+   DURÉE DE CALCUL         0, TOTAL         0
+   DURÉE DE CALCUL         0, TOTAL         0
+   DATE       2024-09-23, 15:00:17
+   *** Arrêt: Programme ase
+   *** Début: Programme maxima
+   
+   SOFiSTiK 2024-6.0.905    MAXIMA - Superposition
+   Sortie sur fichier Non_lineaire_exp.plb
+   Base de données du projet Non_lineaire_exp.cdb -    59. accès
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+   +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   40
+    Règle de combinaison n° 1 non définie ou sans cas de charge adéquat.
+   +++++ erreur no.    75 dans programme MARY
+   Aucun cas de charge valide défini pour la combinaison n° 104.
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+   +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   40
+    Règle de combinaison n° 1 non définie ou sans cas de charge adéquat.
+   +++++ erreur no.    75 dans programme MARY
+   Aucun cas de charge valide défini pour la combinaison n° 104.
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+   +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   40
+    Règle de combinaison n° 1 non définie ou sans cas de charge adéquat.
+   +++++ erreur no.    75 dans programme MARY
+   Aucun cas de charge valide défini pour la combinaison n° 104.
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+   +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   40
+    Règle de combinaison n° 1 non définie ou sans cas de charge adéquat.
+   +++++ erreur no.    75 dans programme MARY
+   Aucun cas de charge valide défini pour la combinaison n° 104.
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+   +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   40
+    Règle de combinaison n° 1 non définie ou sans cas de charge adéquat.
+   +++++ erreur no.    75 dans programme MARY
+   Aucun cas de charge valide défini pour la combinaison n° 104.
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+   +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   40
+    Règle de combinaison n° 1 non définie ou sans cas de charge adéquat.
+   +++++ erreur no.    75 dans programme MARY
+   Aucun cas de charge valide défini pour la combinaison n° 104.
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+   +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   40
+    Règle de combinaison n° 1 non définie ou sans cas de charge adéquat.
+   +++++ erreur no.    75 dans programme MARY
+   Aucun cas de charge valide défini pour la combinaison n° 104.
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+   +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   40
+    Règle de combinaison n° 1 non définie ou sans cas de charge adéquat.
+   +++++ erreur no.    75 dans programme MARY
+   Aucun cas de charge valide défini pour la combinaison n° 104.
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+   +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   45
+    Règle de combinaison n° 1 non définie ou sans cas de charge adéquat.
+   +++++ erreur no.    75 dans programme MARY
+   Aucun cas de charge valide défini pour la combinaison n° 104.
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+   +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   45
+    Règle de combinaison n° 1 non définie ou sans cas de charge adéquat.
+   +++++ erreur no.    75 dans programme MARY
+   Aucun cas de charge valide défini pour la combinaison n° 104.
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+   +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   45
+    Règle de combinaison n° 1 non définie ou sans cas de charge adéquat.
+   +++++ erreur no.    75 dans programme MARY
+   Aucun cas de charge valide défini pour la combinaison n° 104.
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+   +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   45
+    Règle de combinaison n° 1 non définie ou sans cas de charge adéquat.
+   +++++ erreur no.    75 dans programme MARY
+   Aucun cas de charge valide défini pour la combinaison n° 104.
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+   +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   45
+    Règle de combinaison n° 1 non définie ou sans cas de charge adéquat.
+   +++++ erreur no.    75 dans programme MARY
+   Aucun cas de charge valide défini pour la combinaison n° 104.
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+   +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   45
+    Règle de combinaison n° 1 non définie ou sans cas de charge adéquat.
+   +++++ erreur no.    75 dans programme MARY
+   Aucun cas de charge valide défini pour la combinaison n° 104.
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+   +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   45
+    Règle de combinaison n° 1 non définie ou sans cas de charge adéquat.
+   +++++ erreur no.    75 dans programme MARY
+   Aucun cas de charge valide défini pour la combinaison n° 104.
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+   +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   45
+    Règle de combinaison n° 1 non définie ou sans cas de charge adéquat.
+   +++++ erreur no.    75 dans programme MARY
+   Aucun cas de charge valide défini pour la combinaison n° 104.
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+   +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   50
+    Règle de combinaison n° 1 non définie ou sans cas de charge adéquat.
+   +++++ erreur no.    75 dans programme MARY
+   Aucun cas de charge valide défini pour la combinaison n° 104.
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+   +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   55
+    Règle de combinaison n° 100 non définie ou sans cas de charge adéquat.
+   +++++ erreur no.    75 dans programme MARY
+   Aucun cas de charge valide défini pour la combinaison n° 104.
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+   +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   55
+    Règle de combinaison n° 100 non définie ou sans cas de charge adéquat.
+   +++++ erreur no.    75 dans programme MARY
+   Aucun cas de charge valide défini pour la combinaison n° 104.
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+   +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   55
+    Règle de combinaison n° 100 non définie ou sans cas de charge adéquat.
+   +++++ erreur no.    75 dans programme MARY
+   Aucun cas de charge valide défini pour la combinaison n° 104.
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+   +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   55
+    Règle de combinaison n° 100 non définie ou sans cas de charge adéquat.
+   +++++ erreur no.    75 dans programme MARY
+   Aucun cas de charge valide défini pour la combinaison n° 104.
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+   +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   55
+    Règle de combinaison n° 100 non définie ou sans cas de charge adéquat.
+   +++++ erreur no.    75 dans programme MARY
+   Aucun cas de charge valide défini pour la combinaison n° 104.
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+   +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   55
+    Règle de combinaison n° 100 non définie ou sans cas de charge adéquat.
+   +++++ erreur no.    75 dans programme MARY
+   Aucun cas de charge valide défini pour la combinaison n° 104.
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+   +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   55
+    Règle de combinaison n° 100 non définie ou sans cas de charge adéquat.
+   +++++ erreur no.    75 dans programme MARY
+   Aucun cas de charge valide défini pour la combinaison n° 104.
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+   +++++ avertissement no.    83 dans programme FIND_LOADCASES
+    Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+   +++++ avertissement no. 10989 dans programme FIND_LOADCASES
+   avertissement 83 a été émis 50 fois : les prochains seront ignorés.
+   +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   55
+    Règle de combinaison n° 100 non définie ou sans cas de charge adéquat.
+   +++++ erreur no.    75 dans programme MARY
+   Aucun cas de charge valide défini pour la combinaison n° 104.
+   DURÉE DE CALCUL         1, TOTAL         1
+   DATE       2024-09-23, 15:00:19
+   
+   
+   
+    +++++   50 erreurs et   50 avertissements +++++
+   +++++ FICHIER DÉFECTUEUX, PROGRAMME INTERROMPU +++++
+   *** Arrêt: Programme maxima
+  Processus interrompu, erreur détectée!
+   *** Fin du calcul !

@@ -1,0 +1,338 @@
+ ACTING
+ MAXIMA - SUPERPOSITION DES CAS DE CHARGE V 2024-6.0      23.09.24      Page:    
+ 
+ 
+ 
+    1 PROG MAXIMA
+    2 $ Dat : C:\...\sofistik\sofistik_dat\Non_lineaire_exp.dat  (#007)   23/09/2024
+    3 $ Job : HP-ACTING:000106                                                 15:00
+    4 HEAD
+    5 PAGE UNII 0
+    6 CTRL WARN 100    ! NO WARNINGS FOR UNUSED ACTIONS
+    7 ECHO FULL NO
+    8 ECHO TABS YES
+    9
+   10 COMB NO 1 EXTR PERM BASE 0 TYPE PERM TITL "Superpositioning"
+   11 ACT  TYPE G  PART G TITL "dead load"
+   12 LC NO -1 TYPE -
+   13 ACT  TYPE Q  PART Q TITL "variable load"
+   14 LC NO -1 TYPE -
+   15 COMB NO 100 EXTR PERM BASE 1100 TYPE PERM TITL "Crack width"
+   16 ACT  TYPE G GAMU 1 PS1S 0  PART G TITL "dead load"
+   17 LC NO 0 TYPE PERM FACT 1
+   18 ACT  TYPE Q GAMU 1 GAMF 0 PS1S 0  PART Q TITL "variable load"
+   19 LC NO 0 TYPE Q FACT 1
+   20 COMB NO 101 EXTR PERM BASE 1400 TYPE PERM TITL "Deflections"
+   21 ACT  TYPE G GAMU 1 PS1S 0  PART G TITL "dead load"
+   22 LC NO 0 TYPE PERM FACT 1
+   23 ACT  TYPE Q GAMU 1 GAMF 0 PS1S 0  PART Q TITL "variable load"
+   24 LC NO 0 TYPE Q FACT 1
+   25 COMB NO 103 EXTR RARE BASE 1900 TYPE RARE TITL "Support forces caract."
+   26 ACT  TYPE G GAMU 1 PS1S 0  PART G TITL "dead load"
+   27 LC NO 0 TYPE PERM FACT 1
+   28 ACT  TYPE Q GAMU 1 GAMF 0 PS1S 0  PART Q TITL "variable load"
+   29 LC NO 0 TYPE Q FACT 1
+   30 COMB NO 104 EXTR DESI BASE 2100 TYPE DESI TITL "ULS fundamental combination"
+   31 ACT  TYPE G PS1S 0  PART G TITL "dead load"
+   32 LC NO 0 TYPE PERM FACT 1
+   33 ACT  TYPE Q PS1S 0  PART Q TITL "variable load"
+   34 LC NO 0 TYPE Q FACT 1
+   35
+   36 ECHO LOAD  0
+   37 ECHO FACT  0
+   38 ECHO CHCK  0
+   39 ECHO QUAD NO
+   40 SUPP COMB 1 EXTR MAMI ETYP QUAD TYPE MXX,MYY,MXY,VX,VY,NXX,NYY,NXY LC 2101,2103,2105,2107,2109,2111,2113,2115  TITL " Efforts dans les éléments QUAD"
+   41 ECHO LOAD  0
+   42 ECHO FACT  0
+   43 ECHO CHCK  0
+   44 ECHO QNOD NO
+   45 SUPP COMB 1 EXTR MAMI ETYP QNOD TYPE MXX,MYY,MXY,VX,VY,NXX,NYY,NXY SELE -1 LC 2101,2103,2105,2107,2109,2111,2113,2115  TITL " Efforts aux noeuds"
+   46 ECHO LOAD  0
+   47 ECHO FACT  0
+   48 ECHO CHCK  0
+   49 ECHO CABL NO
+   50 SUPP COMB 1 EXTR MAMI ETYP CABL TYPE N LC 2143  TITL " Efforts dans éléments de câble"
+   51 ECHO LOAD  0
+   52 ECHO FACT  0
+   53 ECHO CHCK  0
+   54 ECHO QUAD NO
+   55 SUPP COMB 100 EXTR MAMI ETYP QUAD TYPE MXX,MYY,MXY,VX,VY,NXX,NYY,NXY TITL " Efforts dans les éléments QUAD"
+   56 ECHO LOAD  0
+   57 ECHO FACT  0
+   58 ECHO CHCK  0
+   59 ECHO QNOD NO
+   60 SUPP COMB 100 EXTR MAMI ETYP QNOD TYPE MXX,MYY,MXY,VX,VY,NXX,NYY,NXY SELE -1 TITL " Efforts aux noeuds"
+   61 ECHO LOAD  0
+   62 ECHO FACT  0
+ 
+ ACTING
+ MAXIMA - SUPERPOSITION DES CAS DE CHARGE V 2024-6.0      23.09.24      Page:    
+ 
+ 
+ 
+   63 ECHO CHCK  0
+   64 ECHO CABL NO
+   65 SUPP COMB 100 EXTR MAMI ETYP CABL TYPE N TITL " Efforts dans éléments de câble"
+   66 ECHO LOAD  0
+   67 ECHO FACT  0
+   68 ECHO CHCK  0
+   69 ECHO NODE NO
+   70 SUPP COMB 101 EXTR MAMI ETYP NODE TYPE UX,UY,UZ,URX,URY,URZ,URB TITL " Déplacements nodaux "
+   71 ECHO LOAD  0
+   72 ECHO FACT  0
+   73 ECHO CHCK  0
+   74 ECHO NODE NO
+   75 SUPP COMB 103 EXTR MAMI ETYP NODE TYPE PX,PY,PZ,MX,MY,MZ,MB TITL " Réactions d'appui aux noeuds"
+   76 ECHO LOAD  0
+   77 ECHO FACT  0
+   78 ECHO CHCK  0
+   79 ECHO BOUN NO
+   80 SUPP COMB 103 EXTR MAMI ETYP BOUN TYPE PX,PY,PZ,M TITL " Efforts distribués dans les nœuds"
+   81 ECHO LOAD  0
+   82 ECHO FACT  0
+   83 ECHO CHCK  0
+   84 ECHO NODE NO
+   85 SUPP COMB 104 EXTR MAMI ETYP NODE TYPE PX,PY,PZ,MX,MY,MZ,MB TITL " Réactions d'appui aux noeuds"
+   86 ECHO LOAD  0
+   87 ECHO FACT  0
+   88 ECHO CHCK  0
+   89 ECHO BOUN NO
+   90 SUPP COMB 104 EXTR MAMI ETYP BOUN TYPE PX,PY,PZ,M TITL " Efforts distribués dans les nœuds"
+   91 ECHO LOAD  0
+   92 ECHO FACT  0
+   93 ECHO CHCK  0
+   94 ECHO QUAD NO
+   95 SUPP COMB 104 EXTR MAMI ETYP QUAD TYPE MXX,MYY,MXY,VX,VY,NXX,NYY,NXY TITL " Efforts dans les éléments QUAD"
+   96 ECHO LOAD  0
+   97 ECHO FACT  0
+   98 ECHO CHCK  0
+   99 ECHO QNOD NO
+  100 SUPP COMB 104 EXTR MAMI ETYP QNOD TYPE MXX,MYY,MXY,VX,VY,NXX,NYY,NXY SELE -1 TITL " Efforts aux noeuds"
+  101 ECHO LOAD  0
+  102 ECHO FACT  0
+  103 ECHO CHCK  0
+  104 ECHO CABL NO
+  105 SUPP COMB 104 EXTR MAMI ETYP CABL TYPE N TITL " Efforts dans éléments de câble"
+  106 END
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+      +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   40
+       Règle de combinaison n° 1 non définie ou sans cas de charge adéquat.
+      +++++ erreur no.    75 dans programme MARY
+      Aucun cas de charge valide défini pour la combinaison n° 104.
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+      +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   40
+       Règle de combinaison n° 1 non définie ou sans cas de charge adéquat.
+      +++++ erreur no.    75 dans programme MARY
+      Aucun cas de charge valide défini pour la combinaison n° 104.
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+ 
+      ACTING
+      MAXIMA - SUPERPOSITION DES CAS DE CHARGE V 2024-6.0      23.09.24      Page:5132
+ 
+      
+ 
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+      +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   40
+       Règle de combinaison n° 1 non définie ou sans cas de charge adéquat.
+      +++++ erreur no.    75 dans programme MARY
+      Aucun cas de charge valide défini pour la combinaison n° 104.
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+      +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   40
+       Règle de combinaison n° 1 non définie ou sans cas de charge adéquat.
+      +++++ erreur no.    75 dans programme MARY
+      Aucun cas de charge valide défini pour la combinaison n° 104.
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+      +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   40
+       Règle de combinaison n° 1 non définie ou sans cas de charge adéquat.
+      +++++ erreur no.    75 dans programme MARY
+      Aucun cas de charge valide défini pour la combinaison n° 104.
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+      +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   40
+       Règle de combinaison n° 1 non définie ou sans cas de charge adéquat.
+      +++++ erreur no.    75 dans programme MARY
+      Aucun cas de charge valide défini pour la combinaison n° 104.
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+      +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   40
+       Règle de combinaison n° 1 non définie ou sans cas de charge adéquat.
+      +++++ erreur no.    75 dans programme MARY
+      Aucun cas de charge valide défini pour la combinaison n° 104.
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+      +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   40
+       Règle de combinaison n° 1 non définie ou sans cas de charge adéquat.
+      +++++ erreur no.    75 dans programme MARY
+      Aucun cas de charge valide défini pour la combinaison n° 104.
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+      +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   45
+       Règle de combinaison n° 1 non définie ou sans cas de charge adéquat.
+      +++++ erreur no.    75 dans programme MARY
+      Aucun cas de charge valide défini pour la combinaison n° 104.
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+      +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   45
+       Règle de combinaison n° 1 non définie ou sans cas de charge adéquat.
+      +++++ erreur no.    75 dans programme MARY
+      Aucun cas de charge valide défini pour la combinaison n° 104.
+ 
+      ACTING
+      MAXIMA - SUPERPOSITION DES CAS DE CHARGE V 2024-6.0      23.09.24      Page:5133
+ 
+      
+ 
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+      +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   45
+       Règle de combinaison n° 1 non définie ou sans cas de charge adéquat.
+      +++++ erreur no.    75 dans programme MARY
+      Aucun cas de charge valide défini pour la combinaison n° 104.
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+      +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   45
+       Règle de combinaison n° 1 non définie ou sans cas de charge adéquat.
+      +++++ erreur no.    75 dans programme MARY
+      Aucun cas de charge valide défini pour la combinaison n° 104.
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+      +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   45
+       Règle de combinaison n° 1 non définie ou sans cas de charge adéquat.
+      +++++ erreur no.    75 dans programme MARY
+      Aucun cas de charge valide défini pour la combinaison n° 104.
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+      +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   45
+       Règle de combinaison n° 1 non définie ou sans cas de charge adéquat.
+      +++++ erreur no.    75 dans programme MARY
+      Aucun cas de charge valide défini pour la combinaison n° 104.
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+      +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   45
+       Règle de combinaison n° 1 non définie ou sans cas de charge adéquat.
+      +++++ erreur no.    75 dans programme MARY
+      Aucun cas de charge valide défini pour la combinaison n° 104.
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+      +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   45
+       Règle de combinaison n° 1 non définie ou sans cas de charge adéquat.
+      +++++ erreur no.    75 dans programme MARY
+      Aucun cas de charge valide défini pour la combinaison n° 104.
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+      +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   50
+       Règle de combinaison n° 1 non définie ou sans cas de charge adéquat.
+      +++++ erreur no.    75 dans programme MARY
+      Aucun cas de charge valide défini pour la combinaison n° 104.
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+      +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   55
+       Règle de combinaison n° 100 non définie ou sans cas de charge adéquat.
+ 
+      ACTING
+      MAXIMA - SUPERPOSITION DES CAS DE CHARGE V 2024-6.0      23.09.24      Page:5134
+ 
+      
+ 
+      +++++ erreur no.    75 dans programme MARY
+      Aucun cas de charge valide défini pour la combinaison n° 104.
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+      +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   55
+       Règle de combinaison n° 100 non définie ou sans cas de charge adéquat.
+      +++++ erreur no.    75 dans programme MARY
+      Aucun cas de charge valide défini pour la combinaison n° 104.
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+      +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   55
+       Règle de combinaison n° 100 non définie ou sans cas de charge adéquat.
+      +++++ erreur no.    75 dans programme MARY
+      Aucun cas de charge valide défini pour la combinaison n° 104.
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+      +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   55
+       Règle de combinaison n° 100 non définie ou sans cas de charge adéquat.
+      +++++ erreur no.    75 dans programme MARY
+      Aucun cas de charge valide défini pour la combinaison n° 104.
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+      +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   55
+       Règle de combinaison n° 100 non définie ou sans cas de charge adéquat.
+      +++++ erreur no.    75 dans programme MARY
+      Aucun cas de charge valide défini pour la combinaison n° 104.
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+      +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   55
+       Règle de combinaison n° 100 non définie ou sans cas de charge adéquat.
+      +++++ erreur no.    75 dans programme MARY
+      Aucun cas de charge valide défini pour la combinaison n° 104.
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+      +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   55
+       Règle de combinaison n° 100 non définie ou sans cas de charge adéquat.
+      +++++ erreur no.    75 dans programme MARY
+      Aucun cas de charge valide défini pour la combinaison n° 104.
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action G !
+      +++++ avertissement no.    83 dans programme FIND_LOADCASES
+       Aucun cas de charge linéaire ou superposé trouvé pour l'action Q !
+      +++++ avertissement no. 10989 dans programme FIND_LOADCASES
+      avertissement 83 a été émis 50 fois : les prochains seront ignorés.
+      +++++ erreur no.  2042 dans programme MARY ; ligne d'entree:   55
+       Règle de combinaison n° 100 non définie ou sans cas de charge adéquat.
+      +++++ erreur no.    75 dans programme MARY
+      Aucun cas de charge valide défini pour la combinaison n° 104.
+ 

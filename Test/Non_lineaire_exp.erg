@@ -1,0 +1,606 @@
+ ACTING
+ AQUA   - SECTIONS GENERALES V 2024-6.0            23.09.24             Page:    
+ 
+ 
+ 
+    1 PROG AQUA
+    2 $ Dat : C:\...\Code\sofistik\Test\Non_lineaire_exp.dat  (#001)      23/09/2024
+    3 $ Job : HP-ACTING:000105                                                 11:56
+    4 HEAD
+    5 UNIT 5
+    6 NORM 'NF' 'en199x-200x' COUN 33 CAT '' SNOW '1' UNIT 5
+    7 CONC 1    C '35' TYPR    B FCTD 1.500000 TITL "=C 35/45 (EN 1992)"
+    8 SSLA EPS SERV SIG 1.500000[-] TYPE  LIM
+    9 SSLA EPS ULTI SIG 1.500000[-] TYPE  LIM
+   10 SSLA EPS CALC SIG -1.500000[-] TYPE  LIM
+   11 HMAT 1 TYPE FOUR NSP 0.030000 A 1
+   12 STEE 2    B '500B' FY 435 TMAX 32 TITL "=B 500 B (EN 1992)"
+   13 SSLA EPS SERV SIG 1.150000[-] TYPE  EXT
+   14 SSLA EPS ULTI SIG -1.150000[-] TYPE  EXT
+   15 SSLA EPS CALC SIG -1.150000[-] TYPE  EXT
+   16 HMAT 2 TYPE FOUR NSP 0 A 1
+   17 STEE 3    B '500B' FY 435 TMAX 32 TITL "=B 500 B (EN 1992)"
+   18 SSLA EPS SERV SIG 1.150000[-] TYPE  EXT
+   19 SSLA EPS ULTI SIG -1.150000[-] TYPE  EXT
+   20 SSLA EPS CALC SIG -1.150000[-] TYPE  EXT
+   21 HMAT 3 TYPE FOUR NSP 0 A 1
+   22 CONC 4    C '35' TYPR    B FCTD 1.500000 TITL "=C 35/45 (EN 1992)"
+   23 SSLA EPS SERV SIG 1.500000[-] TYPE  LIM
+   24 SSLA EPS ULTI SIG 1.500000[-] TYPE  LIM
+   25 SSLA EPS CALC SIG -1.500000[-] TYPE  LIM
+   26 HMAT 4 TYPE FOUR NSP 0.030000 A 1
+   27 STEE 5    B '500B' FY 435 TMAX 32 TITL "=B 500 B (EN 1992)"
+   28 SSLA EPS SERV SIG 1.150000[-] TYPE  EXT
+   29 SSLA EPS ULTI SIG -1.150000[-] TYPE  EXT
+   30 SSLA EPS CALC SIG -1.150000[-] TYPE  EXT
+   31 HMAT 5 TYPE FOUR NSP 0 A 1
+   32 STEE 6    B '500B' FY 435 TMAX 32 TITL "=B 500 B (EN 1992)"
+   33 SSLA EPS SERV SIG 1.150000[-] TYPE  EXT
+   34 SSLA EPS ULTI SIG -1.150000[-] TYPE  EXT
+   35 SSLA EPS CALC SIG -1.150000[-] TYPE  EXT
+   36 HMAT 6 TYPE FOUR NSP 0 A 1
+   37 CTRL
+   38 CTRL RFCS 1
+   39 CTRL FACE -1
+   40 CTRL REFD 0
+   41 CTRL STYP  FEM
+   42 CTRL SCUT 17
+   43 CTRL PLAS 1
+   44 SECT 1 MNO 2 MRF 2 FSYM NONE BTYP BEAM
+   45 SV   IT 100[O/O]
+   46 LAY  1 TYPE  MIN MRF 2
+   47 LAY  2 TYPE  MIN MRF 2
+   48 LAY  3 TYPE  MIN MRF 2
+   49 LAY  4 TYPE  MIN MRF 2
+   50 POLY TYPE    O MNO 2
+   51 VERT '0100' Y 40 Z  5.14954E-15 EXP 1
+   52 VERT '0101' Y 40 Z 40 R 40 TYPE  OTP EXP 1
+   53 VERT '0102' Y -40 Z 40 R 40 TYPE  OTP EXP 1
+   54 VERT '0103' Y -40 Z -40 R 40 TYPE  OTP EXP 1
+   55 VERT '0104' Y 40 Z -40 R 40 TYPE  OTP EXP 1
+   56 VERT '0100' Y 40 Z  5.14954E-15 EXP 1
+   57 CTRL
+   58 CTRL RFCS 1
+   59 CTRL FACE -1
+   60 CTRL REFD 0
+   61 CTRL STYP  FEM
+   62 CTRL SCUT 17
+ 
+ ACTING
+ AQUA   - SECTIONS GENERALES V 2024-6.0            23.09.24             Page:    
+ 
+ 
+ 
+   63 CTRL PLAS 1
+   64 SECT 2 MNO 5 MRF 5 FSYM NONE BTYP BEAM
+   65 SV   IT 100[O/O]
+   66 LAY  1 TYPE  MIN MRF 5
+   67 LAY  2 TYPE  MIN MRF 5
+   68 LAY  3 TYPE  MIN MRF 5
+   69 LAY  4 TYPE  MIN MRF 5
+   70 POLY TYPE    O MNO 5
+   71 VERT '0100' Y 40 Z  5.14954E-15 EXP 1
+   72 VERT '0101' Y 40 Z 40 R 40 TYPE  OTP EXP 1
+   73 VERT '0102' Y -40 Z 40 R 40 TYPE  OTP EXP 1
+   74 VERT '0103' Y -40 Z -40 R 40 TYPE  OTP EXP 1
+   75 VERT '0104' Y 40 Z -40 R 40 TYPE  OTP EXP 1
+   76 VERT '0100' Y 40 Z  5.14954E-15 EXP 1
+   77 END
+      +++++ avertissement no.    38 dans programme AQU_SVAL
+      La section  1, étape de construction  0 contient plus de8.0 % (100.0 %) d'armature.
+      +++++ avertissement no.    38 dans programme AQU_SVAL
+      La section  2, étape de construction  0 contient plus de8.0 % (100.0 %) d'armature.
+ 
+      ACTING
+      AQUA   - SECTIONS GENERALES V 2024-6.0            23.09.24             Page:4765
+ 
+      
+ 
+ 
+      Norme de calcul 
+      EuroNorm: NF EN 1992-1-1:2004 (NA:2016) Calcul des structures en béton (France) V 2024
+ 
+      Zone de neige   : 1
+ 
+      Matériaux 
+       Mat Classification                  
+         1 C 35/45 (EN 1992)               
+         2 B 500 B (EN 1992)               
+         3 B 500 B (EN 1992)               
+         4 C 35/45 (EN 1992)               
+         5 B 500 B (EN 1992)               
+         6 B 500 B (EN 1992)               
+ 
+      Section n°     1 
+ 
+      Propriétés statiques de la section 
+        SNo    Mat       A[m2]      Ay[m2]      Iy[m4]  yc[mm] ysc[mm]  E[N/mm2]   g[kg/m]     I-1[m4]
+               MRf      It[m4]      Az[m2]      Iz[m4]  zc[mm] zsc[mm]  G[N/mm2]               I-2[m4]
+                                   Ayz[m2]     Iyz[m4]                                            α[°]
+           1     2  5.0260E-03   4.319E-03   2.010E-06     0.0     0.0    200000      39.5
+                2¹   4.020E-06   4.320E-03   2.010E-06     0.0     0.0     76923  (POUTRE)
+                                            -4.524E-23                                    
+      ¹  Aucune armature valide n'est définie
+ 
+      Moments et forces plastiques 
+                N[kN]   Vy[kN]   Vz[kN]  Mt[kNm] Mt2[kNm] Mb[kNm2]  My[kNm]  Mz[kNm] y[mm] z[mm]     BUCK
+         P¹²   1901.2  1048.81  1048.15    29.27     4.34     0.24    32.28    32.28   0.0   0.0  -, b, b
+         E³²   1901.2   733.03   734.66    21.56     0.03     0.00    19.01    19.01   0.0   0.0         
+      ¹  P = Valeurs plastiques de dimensionnement (Capacité de résistance ultime)
+      ²  Coefficient de sécurité matériau γ-M, Acier d'armature =   1.15
+      ³  E = Valeurs élastiques de dimensionnement (Limite d'élasticité atteinte)
+ 
+      Propriétés des rangs d'armatures 
+      Rang     Mref  Mat       As   As-min   As-max     D      yr      zr   L-tors      N-p     My-p     Mz-p
+                            [cm2]    [cm2]    [cm2]  [mm]    [mm]    [mm]     [mm]     [kN]    [kNm]    [kNm]
+      M1          0    2     0.00     0.00                    0.0     0.0                                    
+      M2          0    2     0.00     0.00                    0.0     0.0                                    
+      M3          0    2     0.00     0.00                    0.0     0.0                                    
+      M4          0    2     0.00     0.00                    0.0     0.0                                    
+ 
+      Section n°     2 
+ 
+      Propriétés statiques de la section 
+        SNo    Mat       A[m2]      Ay[m2]      Iy[m4]  yc[mm] ysc[mm]  E[N/mm2]   g[kg/m]     I-1[m4]
+               MRf      It[m4]      Az[m2]      Iz[m4]  zc[mm] zsc[mm]  G[N/mm2]               I-2[m4]
+                                   Ayz[m2]     Iyz[m4]                                            α[°]
+           2     5  5.0260E-03   4.319E-03   2.010E-06     0.0     0.0    200000      39.5
+                5¹   4.020E-06   4.320E-03   2.010E-06     0.0     0.0     76923  (POUTRE)
+                                            -4.524E-23                                    
+      ¹  Aucune armature valide n'est définie
+ 
+      Moments et forces plastiques 
+                N[kN]   Vy[kN]   Vz[kN]  Mt[kNm] Mt2[kNm] Mb[kNm2]  My[kNm]  Mz[kNm] y[mm] z[mm]     BUCK
+         P¹²   1901.2  1048.81  1048.15    29.27     4.34     0.24    32.28    32.28   0.0   0.0  -, b, b
+         E³²   1901.2   733.03   734.66    21.56     0.03     0.00    19.01    19.01   0.0   0.0         
+      ¹  P = Valeurs plastiques de dimensionnement (Capacité de résistance ultime)
+      ²  Coefficient de sécurité matériau γ-M, Acier d'armature =   1.15
+      ³  E = Valeurs élastiques de dimensionnement (Limite d'élasticité atteinte)
+ 
+      Propriétés des rangs d'armatures 
+      Rang     Mref  Mat       As   As-min   As-max     D      yr      zr   L-tors      N-p     My-p     Mz-p
+                            [cm2]    [cm2]    [cm2]  [mm]    [mm]    [mm]     [mm]     [kN]    [kNm]    [kNm]
+      M1          0    5     0.00     0.00                    0.0     0.0                                    
+      M2          0    5     0.00     0.00                    0.0     0.0                                    
+      M3          0    5     0.00     0.00                    0.0     0.0                                    
+      M4          0    5     0.00     0.00                    0.0     0.0                                    
+ 
+ ACTING
+ SOFiMSHC - ÉLÉMENTS STRUCTURELS ET GÉOMÉTRIE V 2024-6.0  23.09.24  Page:    
+ 
+ 
+ 
+    1 PROG SOFIMSHC
+    2 $ Dat : C:\...\Code\sofistik\Test\Non_lineaire_exp.dat  (#002)      23/09/2024
+    3 $ Job : HP-ACTING:000105                                                 11:56
+    4 HEAD
+    5 UNIT 5
+    6 SYST SPAC GDIV 10000 GDIR NEGZ
+    7 CTRL TOPO 0
+    8 CTRL TOLG VAL 0.010000[M]
+    9 CTRL MESH 1
+   10 CTRL EDRL 1
+   11 CTRL HMIN VAL 0.050000[M]
+   12 CTRL FINE VAL -1
+   13 CTRL PROG VAL 1.700000
+   14
+   15 SPT       1 X   6.00000       0.0   2.00000 FIX PY NX 0 0 -1 SX 1 0 0 TITL "Point"
+   16
+   17 SLN       1 TITL "Line"
+   18 SLNS CA 100000 KR 'LOCZ' DRX 1 0 0 BFIX 1 FCTA 1 FCTE 1
+   19 SLNS CA 100000 KR 'LOCZ' DRX 0 1 0 BFIX 1 FCTA 1 FCTE 1
+   20 SLNS CA 1000 KR 'LOCZ' DRX 0 0 1 BFIX 1 FCTA 1 FCTE 1
+   21 SLNB X1   0.40000000          0.0          0.0 X2   1.40000000          0.0          0.0
+   22 SLN       2 TITL "Line"
+   23 SLNS CA 100000 KR 'LOCZ' DRX 1 0 0 BFIX 1 FCTA 1 FCTE 1
+   24 SLNS CA 100000 KR 'LOCZ' DRX 0 1 0 BFIX 1 FCTA 1 FCTE 1
+   25 SLNS CA 1000 KR 'LOCZ' DRX 0 0 1 BFIX 1 FCTA 1 FCTE 1
+   26 SLNB X1   5.60000000          0.0          0.0 X2   4.60000000          0.0          0.0
+   27
+   28
+   29 SAR       1 GRP 1 MNO 1 MRF 2 NX 0 -1 0 NRA 7 DRX 1 0 0 T 1000 CB 0 CT 0 TITL "Area"
+   30 SARB  OUT
+   31 SLNB X1          0.0          0.0   2.00000000 X2   6.00000000          0.0   2.00000000
+   32 SARB  OUT
+   33 SLNB X1   6.00000000          0.0   2.00000000 X2   6.00000000          0.0          0.0
+   34 SARB  OUT
+   35 SLNB X1   6.00000000          0.0          0.0 X2          0.0          0.0          0.0
+   36 SARB  OUT
+   37 SLNB X1          0.0          0.0          0.0 X2          0.0          0.0   2.00000000
+   38
+   39 $Ajout d'armature
+   40
+   41 SLN       3  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+   42 SLNB X1   1.260000 0.000000 0.100000 X2   1.840000 0.000000 0.100000 !ADDED
+   43 SLN       4  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+   44 SLNB X1   1.840000 0.000000 0.100000 X2   2.420000 0.000000 0.100000 !ADDED
+   45 SLN       5  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+   46 SLNB X1   2.420000 0.000000 0.100000 X2   3.000000 0.000000 0.100000 !ADDED
+   47 SLN       6  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+   48 SLNB X1   3.000000 0.000000 0.100000 X2   3.580000 0.000000 0.100000 !ADDED
+   49 SLN       7  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+   50 SLNB X1   3.580000 0.000000 0.100000 X2   4.160000 0.000000 0.100000 !ADDED
+   51 SLN       8  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+   52 SLNB X1   4.160000 0.000000 0.100000 X2   4.740000 0.000000 0.100000 !ADDED
+   53 SLN       9  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+   54 SLNB X1   0.100000 0.000000 0.280000 X2   0.680000 0.000000 0.280000 !ADDED
+   55 SLN       10  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+   56 SLNB X1   0.680000 0.000000 0.280000 X2   1.260000 0.000000 0.280000 !ADDED
+   57 SLN       11  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+   58 SLNB X1   1.260000 0.000000 0.280000 X2   1.840000 0.000000 0.280000 !ADDED
+   59 SLN       12  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+   60 SLNB X1   1.840000 0.000000 0.280000 X2   2.420000 0.000000 0.280000 !ADDED
+   61 SLN       13  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+   62 SLNB X1   2.420000 0.000000 0.280000 X2   3.000000 0.000000 0.280000 !ADDED
+ 
+ ACTING
+ SOFiMSHC - ÉLÉMENTS STRUCTURELS ET GÉOMÉTRIE V 2024-6.0  23.09.24  Page:    
+ 
+ 
+ 
+   63 SLN       14  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+   64 SLNB X1   3.000000 0.000000 0.280000 X2   3.580000 0.000000 0.280000 !ADDED
+   65 SLN       15  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+   66 SLNB X1   3.580000 0.000000 0.280000 X2   4.160000 0.000000 0.280000 !ADDED
+   67 SLN       16  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+   68 SLNB X1   4.160000 0.000000 0.280000 X2   4.740000 0.000000 0.280000 !ADDED
+   69 SLN       17  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+   70 SLNB X1   4.740000 0.000000 0.280000 X2   5.320000 0.000000 0.280000 !ADDED
+   71 SLN       18  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+   72 SLNB X1   5.320000 0.000000 0.280000 X2   5.900000 0.000000 0.280000 !ADDED
+   73 SLN       19  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+   74 SLNB X1   0.100000 0.000000 0.460000 X2   0.680000 0.000000 0.460000 !ADDED
+   75 SLN       20  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+   76 SLNB X1   0.680000 0.000000 0.460000 X2   1.260000 0.000000 0.460000 !ADDED
+   77 SLN       21  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+   78 SLNB X1   1.260000 0.000000 0.460000 X2   1.840000 0.000000 0.460000 !ADDED
+   79 SLN       22  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+   80 SLNB X1   1.840000 0.000000 0.460000 X2   2.420000 0.000000 0.460000 !ADDED
+   81 SLN       23  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+   82 SLNB X1   2.420000 0.000000 0.460000 X2   3.000000 0.000000 0.460000 !ADDED
+   83 SLN       24  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+   84 SLNB X1   3.000000 0.000000 0.460000 X2   3.580000 0.000000 0.460000 !ADDED
+   85 SLN       25  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+   86 SLNB X1   3.580000 0.000000 0.460000 X2   4.160000 0.000000 0.460000 !ADDED
+   87 SLN       26  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+   88 SLNB X1   4.160000 0.000000 0.460000 X2   4.740000 0.000000 0.460000 !ADDED
+   89 SLN       27  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+   90 SLNB X1   4.740000 0.000000 0.460000 X2   5.320000 0.000000 0.460000 !ADDED
+   91 SLN       28  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+   92 SLNB X1   5.320000 0.000000 0.460000 X2   5.900000 0.000000 0.460000 !ADDED
+   93 SLN       29  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+   94 SLNB X1   0.100000 0.000000 0.640000 X2   0.680000 0.000000 0.640000 !ADDED
+   95 SLN       30  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+   96 SLNB X1   0.680000 0.000000 0.640000 X2   1.260000 0.000000 0.640000 !ADDED
+   97 SLN       31  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+   98 SLNB X1   1.260000 0.000000 0.640000 X2   1.840000 0.000000 0.640000 !ADDED
+   99 SLN       32  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+  100 SLNB X1   1.840000 0.000000 0.640000 X2   2.420000 0.000000 0.640000 !ADDED
+  101 SLN       33  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+  102 SLNB X1   2.420000 0.000000 0.640000 X2   3.000000 0.000000 0.640000 !ADDED
+  103 SLN       34  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+  104 SLNB X1   3.000000 0.000000 0.640000 X2   3.580000 0.000000 0.640000 !ADDED
+  105 SLN       35  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+  106 SLNB X1   3.580000 0.000000 0.640000 X2   4.160000 0.000000 0.640000 !ADDED
+  107 SLN       36  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+  108 SLNB X1   4.160000 0.000000 0.640000 X2   4.740000 0.000000 0.640000 !ADDED
+  109 SLN       37  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+  110 SLNB X1   4.740000 0.000000 0.640000 X2   5.320000 0.000000 0.640000 !ADDED
+  111 SLN       38  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+  112 SLNB X1   5.320000 0.000000 0.640000 X2   5.900000 0.000000 0.640000 !ADDED
+  113 SLN       39  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+  114 SLNB X1   0.100000 0.000000 0.820000 X2   0.680000 0.000000 0.820000 !ADDED
+  115 SLN       40  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+  116 SLNB X1   0.680000 0.000000 0.820000 X2   1.260000 0.000000 0.820000 !ADDED
+  117 SLN       41  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+  118 SLNB X1   1.260000 0.000000 0.820000 X2   1.840000 0.000000 0.820000 !ADDED
+  119 SLN       42  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+  120 SLNB X1   1.840000 0.000000 0.820000 X2   2.420000 0.000000 0.820000 !ADDED
+  121 SLN       43  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+  122 SLNB X1   2.420000 0.000000 0.820000 X2   3.000000 0.000000 0.820000 !ADDED
+  123 SLN       44  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+  124 SLNB X1   3.000000 0.000000 0.820000 X2   3.580000 0.000000 0.820000 !ADDED
+ 
+ ACTING
+ SOFiMSHC - ÉLÉMENTS STRUCTURELS ET GÉOMÉTRIE V 2024-6.0  23.09.24  Page:    
+ 
+ 
+ 
+  125 SLN       45  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+  126 SLNB X1   3.580000 0.000000 0.820000 X2   4.160000 0.000000 0.820000 !ADDED
+  127 SLN       46  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+  128 SLNB X1   4.160000 0.000000 0.820000 X2   4.740000 0.000000 0.820000 !ADDED
+  129 SLN       47  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+  130 SLNB X1   4.740000 0.000000 0.820000 X2   5.320000 0.000000 0.820000 !ADDED
+  131 SLN       48  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+  132 SLNB X1   5.320000 0.000000 0.820000 X2   5.900000 0.000000 0.820000 !ADDED
+  133 SLN       49  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+  134 SLNB X1   0.100000 0.000000 1.000000 X2   0.680000 0.000000 1.000000 !ADDED
+  135 SLN       50  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+  136 SLNB X1   0.680000 0.000000 1.000000 X2   1.260000 0.000000 1.000000 !ADDED
+  137 SLN       51  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+  138 SLNB X1   2.420000 0.000000 1.000000 X2   3.000000 0.000000 1.000000 !ADDED
+  139 SLN       52  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+  140 SLNB X1   3.000000 0.000000 1.000000 X2   3.580000 0.000000 1.000000 !ADDED
+  141 SLN       53  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+  142 SLNB X1   4.740000 0.000000 1.000000 X2   5.320000 0.000000 1.000000 !ADDED
+  143 SLN       54  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+  144 SLNB X1   5.320000 0.000000 1.000000 X2   5.900000 0.000000 1.000000 !ADDED
+  145 SLN       55  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+  146 SLNB X1   0.100000 0.000000 1.180000 X2   0.680000 0.000000 1.180000 !ADDED
+  147 SLN       56  GRP 1 STYP 'CE' SNO 1 DRX 0 0 -1 TITL "Line" !ADDED
+  148 SLNB X1   5.320000 0.000000 1.180000 X2   5.900000 0.000000 1.180000 !ADDED
+  149 END
+ 
+      ACTING
+      SOFiMSHC - ÉLÉMENTS STRUCTURELS ET GÉOMÉTRIE V 2024-6.0  23.09.24  Page:4766
+ 
+      
+ 
+ 
+      Groupes 
+       Grp  Nombre Type     N°min     N°max  Nom                              
+         0       6 BOUN         1         6
+         1     540 CABL     10001     10540
+              3806 QUAD     10001     13806
+              4346 base     10000
+ 
+      Récapitulatif des éléments câble 
+ 
+      Groupes
+        Grp Long. totale    Max.Long. Volume total Masse totale      Surface Nom                             
+                     [m]          [m]         [m3]          [t]         [m2]
+          1       31.320        0.074        0.157        1.236        7.884                                 
+      -------------------------------------------------------------------------------------------------------
+      Somme       31.320                     0.157        1.236        7.884
+ 
+      Récapitulatif des éléments surfaciques 
+ 
+      Groupes
+        Grp  Aire totale Volume total Masse totale  Matériau Nom                             
+                    [m2]         [m3]          [t]
+          1       12.000       12.000       30.000         1                                 
+      ---------------------------------------------------------------------------------------
+      Somme       12.000       12.000       30.000
+ 
+      Récapitulatif de tous les éléments  
+ 
+      Groupes
+        Grp Long. totale  Aire totale Volume total Masse totale Nom                             
+                     [m]         [m2]         [m3]          [t]
+          1       31.320       12.000       12.157       31.236                                 
+      ------------------------------------------------------------------------------------------
+      Somme       31.320       12.000       12.157       31.236
+ 
+ ACTING
+ SOFiLOAD - DÉFINITIONS DES CHARGES V 2024-6.0        23.09.24         Page:    
+ 
+ 
+ 
+    1 PROG SOFILOAD
+    2 $ Dat : C:\...\Code\sofistik\Test\Non_lineaire_exp.dat  (#003)      23/09/2024
+    3 $ Job : HP-ACTING:000105                                                 11:56
+    4 HEAD EXPORT FROM DATABASE
+    5 UNIT TYPE 5
+    6 ACT  'G' GAMU 1.350000 1 PSI0 1 1 1 PART 'G' SUP PERM TITL "dead load"
+    7 ACT  'Q' GAMU 1.500000 0 PSI0 0.700000 0.500000 0.300000 PART 'Q' SUP COND TITL "variable load"
+    8 END
+ 
+ ACTING
+ SOFiLOAD - DÉFINITIONS DES CHARGES V 2024-6.0        23.09.24         Page:    
+ 
+ 
+ 
+    1 PROG SOFILOAD
+    2 $ Dat : C:\...\Code\sofistik\Test\Non_lineaire_exp.dat  (#004)      23/09/2024
+    3 $ Job : HP-ACTING:000105                                                 11:56
+    4 HEAD EXPORT FROM DATABASE
+    5 UNIT TYPE 5
+    6 GRP  0 VAL 'FULL' CS 9998
+    7 GRP  1 VAL 'FULL' CS 9998
+    8 GRP  0 VAL 'FULL' CS 9998
+    9 GRP  1 VAL 'FULL' CS 9998
+   10 LC   1 'NONE' 1 TITL "sum_PZ=-1000. kN               ."
+   11 LINE AUTO WIDE 0 TYPE PZZ P1 -833.3333 2.400000 0 2 P2 -833.3333 3.600000 0 2
+   12 GRP  0 VAL 'FULL' CS 9998
+   13 GRP  1 VAL 'FULL' CS 9998
+   14 GRP  0 VAL 'FULL' CS 9998
+   15 GRP  1 VAL 'FULL' CS 9998
+   16 LC   10 'NONE' 1 CRI1 6  5.13499E-03 500.1645 TITL "sum_PZ=-1000. kN               ."
+   17 LINE AUTO WIDE 0 TYPE PZZ P1 -833.3333 2.400000 0 2 P2 -833.3333 3.600000 0 2
+   18 END
+ 
+      ACTING
+      SOFiLOAD - DÉFINITIONS DES CHARGES V 2024-6.0        23.09.24         Page:4767
+ 
+      
+      EXPORT FROM DATABASE
+ 
+ 
+      Actions 
+      Type    part  sup Nom                                  γ-u    γ-f    γ-a     ψ₀     ψ₁     ψ₂
+      G       G    perm dead load                           1.35   1.00   1.00   1.00   1.00   1.00
+      Q       Q    cond variable load                       1.50   0.00   1.00   0.70   0.50   0.30
+ 
+      Cas de charge      1 sum_PZ=-1000. kN               .
+      Facteur des forces et moments             1.000
+ 
+      Charges 
+      Type      Référence à   Projection                       Coordonnées          Type  Charge             
+                              Nom                W[m]      X[m]      Y[m]      Z[m]
+      Ligne   qgrp      1                                 2.400     0.000     2.000 PZZ     -833.33 [kN/m]
+                                                          3.600     0.000     2.000         -833.33 [kN/m]
+                                                                             activé          100.00 pourcent 
+ 
+      Cas de charge     10 sum_PZ=-1000. kN               .
+      Facteur des forces et moments             1.000
+      Valeur de critère utilisateur    cri1     6.000
+      Valeur de critère utilisateur    cri2     0.005
+      Valeur de critère utilisateur    cri3   500.164
+ 
+      Charges 
+      Type      Référence à   Projection                       Coordonnées          Type  Charge             
+                              Nom                W[m]      X[m]      Y[m]      Z[m]
+      Ligne   qgrp      1                                 2.400     0.000     2.000 PZZ     -833.33 [kN/m]
+                                                          3.600     0.000     2.000         -833.33 [kN/m]
+                                                                             activé          100.00 pourcent 
+ 
+ ACTING
+ ASE - ADVANCED SOLUTION ENGINE V 2024-6.0           23.09.24           Page:    
+ 
+ 
+ 
+    1 +PROG ASE
+    2 $ Dat : C:\...\Code\sofistik\Test\Non_lineaire_exp.dat  (#005)      23/09/2024
+    3 $ Job : HP-ACTING:000105                                                 11:56
+    4 HEAD CALCUL DES EFFORTS ET MOMENTS
+    5 CTRL OPT WARP VAL 0
+    6 LC 10
+    7 END
+ 
+      ACTING
+      ASE - ADVANCED SOLUTION ENGINE V 2024-6.0           23.09.24           Page:4768
+ 
+      
+      Calcul des efforts et moments
+ 
+ 
+      Cas de charge     10 sum_PZ=-1000. kN               .
+      Facteur des forces et moments             1.000
+ 
+      Somme des charges                                                                          
+      Cas de c             Σ(Charges)              Nom                                    
+                     X[kN]       Y[kN]       Z[kN]                                        
+            10         0.0         0.0     -1000.0 sum_PZ=-1000. kN               .       
+ 
+      Forces aux noeuds  Cas de charge     10   sum_PZ=-1000. kN 
+         Nœud       P-X       P-Y       P-Z       M-X       M-Y       M-Z
+           No      [kN]      [kN]      [kN]     [kNm]     [kNm]     [kNm]
+         1005                          15.5                               
+         1006                          17.6                               
+         1007                          12.4                               
+         1008                          12.6                               
+         1559                          30.9                               
+         1560                          30.5                               
+         1561                          30.0                               
+         1562                          28.9                               
+         1563                          27.7                               
+         1564                          26.9                               
+         1565                          26.0                               
+         1566                          25.4                               
+         1567                          24.8                               
+         1568                          22.2                               
+         1569                          22.6                               
+         1570                          25.2                               
+         1571                          23.4                               
+         1572                          25.6                               
+         1573                          29.3                               
+         1574                          32.3                               
+         1575                          35.2                               
+         1576                          24.9                               
+         1577                          24.9                               
+         1578                          24.9                               
+         1579                          25.8                               
+         1580                          24.9                               
+         1581                          24.1                               
+         1582                          25.0                               
+         1583                          25.8                               
+         1584                          25.0                               
+         1585                          24.2                               
+         1586                          25.0                               
+         1587                          25.0                               
+         1588                          25.0                               
+         1589                          25.0                               
+         1590                          25.1                               
+         1591                          25.6                               
+         1592                          25.1                               
+         1593                          24.6                               
+         1594                          25.1                               
+ 
+      Somme des réactions et charges                                                             
+      Cas de c            Σ(Réactions)             Nom                                    
+                     X[kN]       Y[kN]       Z[kN]                                        
+                           Σ(Charges)                                                     
+            10         0.0         0.0      1000.0 sum_PZ=-1000. kN               .       
+                       0.0         0.0     -1000.0                                        
+ 
+ ACTING
+ ASE - ADVANCED SOLUTION ENGINE V 2024-6.0           23.09.24           Page:    
+ 
+ 
+ 
+    1 +PROG ASE
+    2 $ Dat : C:\...\Code\sofistik\Test\Non_lineaire_exp.dat  (#006)      23/09/2024
+    3 $ Job : HP-ACTING:000105                                                 11:56
+    4 HEAD CALCUL DES EFFORTS ET MOMENTS
+    5 PAGE UNII 0
+    6 CTRL OPT WARP VAL 0
+    7 LC 10
+    8 END
+ 
+      ACTING
+      ASE - ADVANCED SOLUTION ENGINE V 2024-6.0           23.09.24           Page:4769
+ 
+      
+      Calcul des efforts et moments
+ 
+ 
+      Cas de charge     10 sum_PZ=-1000. kN               .
+      Facteur des forces et moments             1.000
+ 
+      Somme des charges                                                                          
+      Cas de c             Σ(Charges)              Nom                                    
+                     X[kN]       Y[kN]       Z[kN]                                        
+            10         0.0         0.0     -1000.0 sum_PZ=-1000. kN               .       
+ 
+      Forces aux noeuds  Cas de charge     10   sum_PZ=-1000. kN 
+         Nœud       P-X       P-Y       P-Z       M-X       M-Y       M-Z
+           No      [kN]      [kN]      [kN]     [kNm]     [kNm]     [kNm]
+         1005                          15.5                               
+         1006                          17.6                               
+         1007                          12.4                               
+         1008                          12.6                               
+         1559                          30.9                               
+         1560                          30.5                               
+         1561                          30.0                               
+         1562                          28.9                               
+         1563                          27.7                               
+         1564                          26.9                               
+         1565                          26.0                               
+         1566                          25.4                               
+         1567                          24.8                               
+         1568                          22.2                               
+         1569                          22.6                               
+         1570                          25.2                               
+         1571                          23.4                               
+         1572                          25.6                               
+         1573                          29.3                               
+         1574                          32.3                               
+         1575                          35.2                               
+         1576                          24.9                               
+         1577                          24.9                               
+         1578                          24.9                               
+         1579                          25.8                               
+         1580                          24.9                               
+         1581                          24.1                               
+         1582                          25.0                               
+         1583                          25.8                               
+         1584                          25.0                               
+         1585                          24.2                               
+         1586                          25.0                               
+         1587                          25.0                               
+         1588                          25.0                               
+         1589                          25.0                               
+         1590                          25.1                               
+         1591                          25.6                               
+         1592                          25.1                               
+         1593                          24.6                               
+         1594                          25.1                               
+ 
+      Somme des réactions et charges                                                             
+      Cas de c            Σ(Réactions)             Nom                                    
+                     X[kN]       Y[kN]       Z[kN]                                        
+                           Σ(Charges)                                                     
+            10         0.0         0.0      1000.0 sum_PZ=-1000. kN               .       
+                       0.0         0.0     -1000.0                                        
+ 

@@ -1,0 +1,19 @@
+PROG WING
+$ Document GRAPHIC (version ####-##.## build #######) de Service Pack 2024 6 Build 905 20.09.24 , 16:48:05
+HEAD $  Éléments structurels
+UNIT 0 SET IN $ Set d'unité par défaut
+CTRL OPT GSTR VAL DEFA
+CTRL OPT REPR VAL YES
+$ Graphique    1 | Image    1 | Calque    1 :  Éléments structurels
+PAGE LANO 2
+SIZE TYPE URS SC 0 MARG NO
+SIZ2
+AND  POSI 1 POSL 0 POSR 100 POSD 0 POSU 100
+LC   NO 1 DESI 1
+VIEW TYPE DIRE X 0 Y 1 Z 0 AXIS NEGZ ROTA 0
+DEFO TYPE NO EXPO 0 SMOV NO
+SELE NUMB 0
+STRU NUME MESH FILL NO REPR DSTR UNIT DEFA SCHH YES
+$ Définitions du travail interactif
+iNTE SET 0 PAR1 1 PAR2 1 PAR3 1 PAR4 0 PAR5 0
+END

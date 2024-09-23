@@ -1,0 +1,78 @@
+   *** Début: Programme Calculation - Version 2024-6.0.905
+   *** Début: Programme aqua
+   
+   SOFiSTiK 2024-6.0.905    AQUA   - GENERAL SECTIONS
+   Sortie sur fichier Non_lineaire_exp.plb
+   Base de données du projet Non_lineaire_exp.cdb -   125. accès
+   +++++ avertissement no.    38 dans programme AQU_SVAL
+   La section  1, étape de construction  0 contient plus de8.0 % (100.0 %) d'armature.
+   +++++ avertissement no.    38 dans programme AQU_SVAL
+   La section  2, étape de construction  0 contient plus de8.0 % (100.0 %) d'armature.
+   DURÉE DE CALCUL         0, TOTAL         0
+   DATE       2024-09-23, 11:56:51
+   
+   
+   
+    +++++    0 erreurs et    2 avertissements +++++
+   *** Arrêt: Programme aqua
+   *** Début: Programme sofimshc
+   
+   SOFiSTiK 2024-6.0.905    SOFIMSHC - GEOMETRY + STRUCT
+   Sortie sur fichier Non_lineaire_exp.plb
+   Base de données du projet Non_lineaire_exp.cdb -   126. accès
+   Analyse et décomposition du modèle structurel
+   CPU-time [s]:    0.00,   geom. tolerance [m]:   0.010
+   DURÉE DE CALCUL         1, TOTAL         1
+   DATE       2024-09-23, 11:56:52
+   *** Arrêt: Programme sofimshc
+   *** Début: Programme sofiload
+   
+   SOFiSTiK 2024-6.0.905    SOFILOAD - LOAD GENERATOR
+   Sortie sur fichier Non_lineaire_exp.plb
+   Base de données du projet Non_lineaire_exp.cdb -   127. accès
+   DURÉE DE CALCUL         0, TOTAL         0
+   DURÉE DE CALCUL         0, TOTAL         0
+   DATE       2024-09-23, 11:56:52
+   *** Arrêt: Programme sofiload
+   *** Début: Programme sofiload
+   
+   SOFiSTiK 2024-6.0.905    SOFILOAD - LOAD GENERATOR
+   Sortie sur fichier Non_lineaire_exp.plb
+   Base de données du projet Non_lineaire_exp.cdb -   128. accès
+   DURÉE DE CALCUL         0, TOTAL         0
+   DURÉE DE CALCUL         0, TOTAL         0
+   DATE       2024-09-23, 11:56:53
+   *** Arrêt: Programme sofiload
+   *** Début: Programme ase
+   
+   SOFiSTiK 2024-6.0.905    ASE   - ADVANCED SOLUTION ENGINE
+   Sortie sur fichier Non_lineaire_exp.plb
+   Base de données du projet Non_lineaire_exp.cdb -   129. accès
+   Cas de charge    10
+   
+   Paramètres du système d'équatio   3
+   (Sparse Direct Solver)
+   Nbre d'inconnues              23753
+   Entrées totales              276756
+   Nb d'entrées après complé   1511104
+   DURÉE DE CALCUL         1, TOTAL         1
+   DURÉE DE CALCUL         0, TOTAL         1
+   DATE       2024-09-23, 11:56:54
+   *** Arrêt: Programme ase
+   *** Début: Programme ase
+   
+   SOFiSTiK 2024-6.0.905    ASE   - ADVANCED SOLUTION ENGINE
+   Sortie sur fichier Non_lineaire_exp.plb
+   Base de données du projet Non_lineaire_exp.cdb -   130. accès
+   Cas de charge    10
+   
+   Paramètres du système d'équatio   3
+   (Sparse Direct Solver)
+   Nbre d'inconnues              23753
+   Entrées totales              276756
+   Nb d'entrées après complé   1511104
+   DURÉE DE CALCUL         1, TOTAL         1
+   DURÉE DE CALCUL         0, TOTAL         1
+   DATE       2024-09-23, 11:56:55
+   *** Arrêt: Programme ase
+   *** Fin du calcul !

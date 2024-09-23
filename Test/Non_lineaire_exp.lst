@@ -1,0 +1,80 @@
+ ACTING
+ ASE - ADVANCED SOLUTION ENGINE V 2024-6.0           23.09.24           Page:    
+ 
+ 
+ 
+    1 +PROG ASE
+    2 $ Dat : C:\...\Code\sofistik\Test\Non_lineaire_exp.dat  (#006)      23/09/2024
+    3 $ Job : HP-ACTING:000105                                                 11:56
+    4 HEAD CALCUL DES EFFORTS ET MOMENTS
+    5 PAGE UNII 0
+    6 CTRL OPT WARP VAL 0
+    7 LC 10
+    8 END
+ 
+      ACTING
+      ASE - ADVANCED SOLUTION ENGINE V 2024-6.0           23.09.24           Page:4769
+ 
+      
+      Calcul des efforts et moments
+ 
+ 
+      Cas de charge     10 sum_PZ=-1000. kN               .
+      Facteur des forces et moments             1.000
+ 
+      Somme des charges                                                                          
+      Cas de c             Σ(Charges)              Nom                                    
+                     X[kN]       Y[kN]       Z[kN]                                        
+            10         0.0         0.0     -1000.0 sum_PZ=-1000. kN               .       
+ 
+      Forces aux noeuds  Cas de charge     10   sum_PZ=-1000. kN 
+         Nœud       P-X       P-Y       P-Z       M-X       M-Y       M-Z
+           No      [kN]      [kN]      [kN]     [kNm]     [kNm]     [kNm]
+         1005                          15.5                               
+         1006                          17.6                               
+         1007                          12.4                               
+         1008                          12.6                               
+         1559                          30.9                               
+         1560                          30.5                               
+         1561                          30.0                               
+         1562                          28.9                               
+         1563                          27.7                               
+         1564                          26.9                               
+         1565                          26.0                               
+         1566                          25.4                               
+         1567                          24.8                               
+         1568                          22.2                               
+         1569                          22.6                               
+         1570                          25.2                               
+         1571                          23.4                               
+         1572                          25.6                               
+         1573                          29.3                               
+         1574                          32.3                               
+         1575                          35.2                               
+         1576                          24.9                               
+         1577                          24.9                               
+         1578                          24.9                               
+         1579                          25.8                               
+         1580                          24.9                               
+         1581                          24.1                               
+         1582                          25.0                               
+         1583                          25.8                               
+         1584                          25.0                               
+         1585                          24.2                               
+         1586                          25.0                               
+         1587                          25.0                               
+         1588                          25.0                               
+         1589                          25.0                               
+         1590                          25.1                               
+         1591                          25.6                               
+         1592                          25.1                               
+         1593                          24.6                               
+         1594                          25.1                               
+ 
+      Somme des réactions et charges                                                             
+      Cas de c            Σ(Réactions)             Nom                                    
+                     X[kN]       Y[kN]       Z[kN]                                        
+                           Σ(Charges)                                                     
+            10         0.0         0.0      1000.0 sum_PZ=-1000. kN               .       
+                       0.0         0.0     -1000.0                                        
+ 
