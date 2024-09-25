@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import filedialog, messagebox
 from PIL import Image, ImageTk
-from bt_functions import add_linear_calculation_block, calculate_teddy, linear_structure, plot_structure_with_sub_tirants
+from sofistik_tools import SofiFileHandler, Ties, Plot, CDBData
 
 def select_dat_file():
     """Ouvre une boîte de dialogue pour sélectionner un fichier .dat."""
@@ -28,16 +28,35 @@ def on_next_click():
         return
     
     try:
-        # Exemple d'utilisation avec les fichiers sélectionnés
+        # Créer une instance de SofiFileHandler pour manipuler le fichier .dat
+        file_handler = SofiFileHandler()
+        file_handler.add_dat(dat_file)
+
+        # Ajouter un bloc de calcul linéaire
         n = 10  # Exemple de valeur pour LC
-        add_linear_calculation_block(dat_file, n)
-        calculate_teddy(dat_file)
-        
-        # Créer une première armature
-        sub_tirants = linear_structure(cdb_file, 'z', 10, 10, 10)
+        file_handler.add_linear_calculation_block(n)
+        file_handler.calculate_with_sps()  # Exécuter le calcul avec SOFiSTiK en mode batch
+
+        # Extraire les données du CDB
+        cdb_data = CDBData()
+        cdb_data.open_cdb(cdb_file)
+        node_coords = cdb_data.extract_node_coords()
+        elements, element_numbers = cdb_data.extract_quad_elements()
+        bounds = cdb_data.extract_structure_bounds()
+        membran_forces = cdb_data.extract_quad_membran_forces()
+        cdb_data.close_cdb()
+
+        # Créer les tirants avec la classe Ties
+        ties = Ties()
+        threshold = 10  # Exemple de seuil de force
+        generated_ties = ties.generate_reinforcement_ties_from_concrete(
+            node_coords, elements, element_numbers, bounds, membran_forces, threshold, dir='z', n=10, m=10
+        )
 
         # Afficher la structure avec les tirants conservés
-        plot_structure_with_sub_tirants(cdb_file, sub_tirants, view_axis='xz')
+        plot = Plot()
+        fig = plot.plot_structure_with_ties(node_coords, elements, generated_ties, view_axis='xz')
+        fig.show()  # Afficher la figure dans une nouvelle fenêtre
 
     except Exception as e:
         messagebox.showerror("Erreur d'exécution", f"Une erreur est survenue : {str(e)}")
@@ -48,7 +67,7 @@ root.title("Interface de l'Application")
 root.geometry("800x600")
 
 # Charger l'image de fond
-background_image_path = "images\pini_group_logo.jpg"  # Chemin de l'image
+background_image_path = "images/pini_group_logo.jpg"  # Chemin de l'image
 bg_image = Image.open(background_image_path)
 bg_image = bg_image.resize((800, 600), Image.LANCZOS)
 bg_photo = ImageTk.PhotoImage(bg_image)
