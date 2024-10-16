@@ -12,7 +12,7 @@ CDBstatus.close_cdb()
 h = max(y)
 e = max(x)
 
-V = 5000
+V = 10
 H = 2
 epsilon = 0.00000001
 E = 3.1475870 * 10 ** 7
