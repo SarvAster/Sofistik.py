@@ -1,0 +1,12 @@
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui">
+    <ribbon>
+      <tabs>
+        <tab id="CustomThermalTab" label="Thermal Analysis Tab">
+          <group id="ThermalAnalysisGroup" label="Thermal Analysis">
+            <button id="ThermalButton" label="Run Thermal Analysis" size="large" onAction="OnThermalButtonClick"/>
+          </group>
+        </tab>
+      </tabs>
+    </ribbon>
+  </customUI>
+  
